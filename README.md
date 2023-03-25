@@ -16,3 +16,5 @@ o algo així
 ```git clone https://github.com/Elahi-cs/HackNight-UPC/```
 ## 6. Settejar la url del SSH
 ```git remote set-url origin git@github.com:Elahi-cs/HackNight-UPC.git```
+
+Projecte de referència: [Sideways Shooter](https://github.com/Elahi-cs/Sideways-Shooter)
