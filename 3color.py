@@ -20,7 +20,6 @@ class TriColor:
     def run_game(self):
         while True:
             self._check_events()
-            
 
     def _check_events(self):
         for event in pygame.event.get():
@@ -38,7 +37,6 @@ class TriColor:
 
     def _check_keyup_events(self, event):
         pass
-
 
 
 if __name__=='__main__':

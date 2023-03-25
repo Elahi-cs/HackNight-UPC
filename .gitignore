@@ -1,2 +1,4 @@
 cloud-key*
 .venv/
+__pycache__
+
