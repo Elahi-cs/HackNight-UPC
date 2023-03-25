@@ -1,14 +1,16 @@
-# Example file showing a circle moving on screen
 import pygame
+from Environment import Environment
+from settings import Settings
 
-# pygame setup
+
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
 running = True
-dt = 0
 
-player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
+#player  = Player(screen, 640,360)
+environment = Environment(screen, 20)
+environment.generate_blocks(360)
 
 while running:
     # poll for events
@@ -17,21 +19,11 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # fill the screen with a color to wipe away anything from last frame
-    screen.fill("purple")
-
-    pygame.draw.circle(screen, "red", player_pos, 40)
-
-    keys = pygame.key.get_pressed()
-    if keys[pygame.K_w]:
-        player_pos.y -= 300 * dt
-    if keys[pygame.K_s]:
-        player_pos.y += 300 * dt
-    if keys[pygame.K_a]:
-        player_pos.x -= 300 * dt
-    if keys[pygame.K_d]:
-        player_pos.x += 300 * dt
-
+        # fill the screen with a color to wipe away anything from last frame
+    environment.cambio_fondo()
+    environment.movement_blocks()
+    environment.blitall(screen)
+    #player.movemet_player()
     # flip() the display to put your work on screen
     pygame.display.flip()
 
