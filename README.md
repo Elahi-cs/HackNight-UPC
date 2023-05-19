@@ -13,7 +13,7 @@ o algo així
 ```eval `ssh-agent -s` ```
 ```ssh-add```
 ## 5. Clonar el repositori
-```git clone https://github.com/Elahi-cs/HackNight-UPC/```
+```git clone git@github.com:Elahi-cs/HackNight-UPC.git```
 ## 6. Settejar la url del SSH
 ```git remote set-url origin git@github.com:Elahi-cs/HackNight-UPC.git```
 
