@@ -11,6 +11,7 @@ Settings -> SSH and GPG keys -> New SSH key -> enganxar la clau
 ## 4. Afegir la clau SSH localment 
 o algo així 
 ```eval `ssh-agent -s` ```
+
 ```ssh-add```
 ## 5. Clonar el repositori
 ```git clone git@github.com:Elahi-cs/HackNight-UPC.git```
